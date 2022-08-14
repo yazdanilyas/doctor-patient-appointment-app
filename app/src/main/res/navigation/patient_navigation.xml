@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patient_navigation"
+    app:startDestination="@id/menu_search_doc_p">
+
+    <fragment
+        android:id="@+id/menu_more_p"
+        android:name="com.cybereast.modernqueue.patient.fragments.moreFragment.MoreFragmentP"
+        android:label="More"
+        tools:layout="@layout/fragment_more_p">
+        <action
+            android:id="@+id/action_moreFragmentP_to_eyeTestFragment"
+            app:destination="@id/eyeTestFragment" />
+        <action
+            android:id="@+id/action_menu_more_p_to_opticalCentersFragment"
+            app:destination="@id/opticalCentersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eyeTestFragment"
+        android:name="com.cybereast.modernqueue.patient.fragments.eyetest.EyeTestFragment"
+        android:label="Acuity Test"
+        tools:layout="@layout/fragment_eye_test">
+        <action
+            android:id="@+id/action_eyeTestFragment_to_acuityTestFragment"
+            app:destination="@id/acuityTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/acuityTestFragment"
+        android:name="com.cybereast.modernqueue.patient.fragments.eyetest.AcuityTestFragment"
+        android:label="Acuity Test"
+        tools:layout="@layout/fragment_acuity_test"/>
+    <fragment
+        android:id="@+id/menu_search_doc_p"
+        android:name="com.cybereast.modernqueue.patient.fragments.searchDoctorFragment.SearchDoctorFragment"
+        android:label="Search Doctor"
+        tools:layout="@layout/fragment_search_doctor" />
+    <fragment
+        android:id="@+id/menu_bookings_p"
+        android:name="com.cybereast.modernqueue.patient.fragments.bookingFragment.BookingFragmentP"
+        android:label="My Bookings"
+        tools:layout="@layout/fragment_booking_p" />
+    <fragment
+        android:id="@+id/opticalCentersFragment"
+        android:name="com.cybereast.modernqueue.patient.fragments.shop.OpticalCentersFragment"
+        android:label="Optical Centers"
+        tools:layout="@layout/fragment_optical_centers" >
+        <action
+            android:id="@+id/action_opticalCentersFragment_to_noorClinicFragment"
+            app:destination="@id/noorClinicFragment" />
+        <action
+            android:id="@+id/action_opticalCentersFragment_to_eyeCareClinicFragment"
+            app:destination="@id/eyeCareClinicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noorClinicFragment"
+        android:name="com.cybereast.modernqueue.patient.fragments.shop.NoorClinicFragment"
+        android:label="Noor Clinic"
+        tools:layout="@layout/fragment_noo_clinic" />
+    <fragment
+        tools:layout="@layout/fragment_eye_care_clinic"
+        android:id="@+id/eyeCareClinicFragment"
+        android:name="com.cybereast.modernqueue.patient.fragments.shop.EyeCareClinicFragment"
+        android:label="Eye Care Clinic" />
+
+</navigation>

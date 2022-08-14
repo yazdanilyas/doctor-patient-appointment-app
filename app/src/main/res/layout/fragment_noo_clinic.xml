@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.fragments.shop.NoorClinicFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/amesCv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300dp"
+                android:layout_margin="@dimen/_10dp"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_5dp"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/bannerImg1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:src="@drawable/noor_ames_20"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/amesTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AMES"
+                        android:textSize="@dimen/_20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/bannerImg1" />
+
+                    <TextView
+                        android:id="@+id/priceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Price:$20"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/amesTv" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/amesButton"
+                        android:onClick="placeOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorOrange"
+                        android:text="Place Order"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="-44dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/candanceCv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300dp"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_5dp"
+                app:layout_constraintTop_toBottomOf="@+id/amesCv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/candanceImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:src="@drawable/noor_candance_30"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/candanceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Candance"
+                        android:textSize="@dimen/_20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/candanceImg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Price:$30"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/candanceTv" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/candanceBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorOrange"
+                        android:text="Place Order"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/groveCv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300dp"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_5dp"
+                app:layout_constraintTop_toBottomOf="@+id/candanceCv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/groveImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:src="@drawable/noor_grove_10"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/groveTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="grove"
+                        android:textSize="@dimen/_20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/groveImg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Price:$10"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/groveTv" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/groveBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorOrange"
+                        android:text="Place Order"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kitchenerCv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300dp"
+                android:layout_margin="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_5dp"
+                app:layout_constraintTop_toBottomOf="@+id/groveCv">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/kitchenerImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200dp"
+                        android:src="@drawable/noor_kitchener_30"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/kitchenerTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="grove"
+                        android:textSize="@dimen/_20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/kitchenerImg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:text="Price:$10"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/kitchenerTv" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                       android:id="@+id/kitchenerBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorOrange"
+                        android:text="Place Order"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

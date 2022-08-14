@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreyLight"
+    tools:context=".patient.fragments.shop.OpticalCentersFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_10dp"
+        android:id="@+id/noorClinicCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:cardElevation="@dimen/_5dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/noorClinicTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Noor Optical Center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/bannerImg1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:src="@drawable/noor_optics"
+                app:layout_constraintTop_toBottomOf="@+id/noorClinicTv" />
+
+            <TextView
+                android:id="@+id/timingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="Timings:"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bannerImg1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM to 8:00 PM"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/timingLabel"
+                app:layout_constraintTop_toBottomOf="@+id/bannerImg1" />
+
+            <TextView
+                android:id="@+id/daysLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="Days:"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timingLabel" />
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday to Saturday"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toEndOf="@+id/daysLabel"
+                app:layout_constraintTop_toBottomOf="@+id/timingLabel" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10dp"
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact no. +923001234567"
+                android:textSize="@dimen/_15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/days"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/addressTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: D ground, Faisalabad"
+                android:textSize="@dimen/_15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/contact"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_10dp"
+        android:id="@+id/eyeCareClinicCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+        app:cardCornerRadius="@dimen/_10dp"
+        app:cardElevation="@dimen/_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/noorClinicCV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/eyeCareClinicTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eye Care Clinic"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/bannerImg2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150dp"
+                android:src="@drawable/eye_care_optics"
+                app:layout_constraintTop_toBottomOf="@+id/eyeCareClinicTv" />
+
+            <TextView
+                android:id="@+id/timingLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="Timings:"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bannerImg2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM to 8:00 PM"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/timingLabel2"
+                app:layout_constraintTop_toBottomOf="@+id/bannerImg2" />
+
+            <TextView
+                android:id="@+id/daysLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:text="Days:"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timingLabel2" />
+
+            <TextView
+                android:id="@+id/days2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday to Saturday"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.35"
+                app:layout_constraintStart_toEndOf="@+id/daysLabel2"
+                app:layout_constraintTop_toBottomOf="@+id/timingLabel2" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_10dp"
+                android:id="@+id/contact2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact no. +923001234567"
+                android:textSize="@dimen/_15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/days2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                android:id="@+id/addressTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: D ground, Faisalabad"
+                android:textSize="@dimen/_15sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/contact2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
