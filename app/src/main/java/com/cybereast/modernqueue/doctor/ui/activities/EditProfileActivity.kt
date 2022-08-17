@@ -83,7 +83,8 @@ class EditProfileActivity : AppCompatActivity(), ValidationListener {
                 "country" to mBinding.countryNameEt.text.toString(),
                 "state" to mBinding.stateEt.text.toString(),
                 "district" to mBinding.districtEt.text.toString(),
-                "speciality" to mBinding.specialityEt.text.toString()
+                "speciality" to mBinding.specialityEt.text.toString(),
+                "consultancyFee" to mBinding.consultFeeEt.text.toString().toInt()
 
             )
             fireStoreDb.collection(Constants.COLLECTION_DOCTORS).document(uid.toString())

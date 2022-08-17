@@ -99,7 +99,8 @@ class BookingFragmentP : Fragment() {
             fireStoreDbRef.collection(Constants.COLLECTION_PATIENT_BOOKING)
                 .whereEqualTo("patientId", mAuth.currentUser?.uid).get()
                 .addOnSuccessListener { snapshot ->
-
+                    if (mViewModel.bookingList.size > 0)
+                        mViewModel.bookingList.clear()
                     Log.d("TAG", "getMyBookings: " + snapshot.size())
                     for (snap in snapshot) {
                         val booking = snap.toObject(Booking::class.java)

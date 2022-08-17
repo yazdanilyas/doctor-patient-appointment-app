@@ -165,9 +165,11 @@ class SearchDoctorFragment : Fragment(), BaseInterface {
     }
 
     private fun getDoctorData(doc: QueryDocumentSnapshot?) {
+        doctorList.clear()
         fireStoreDbRef.collection(Constants.COLLECTION_DOCTORS).document(doc?.id.toString())
             .collection(Constants.COLLECTION_PROFILE)
             .addSnapshotListener { value: QuerySnapshot?, error: FirebaseFirestoreException? ->
+
                 if (value != null && error == null) {
                     for (v in value) {
                         val doctor = v.toObject(Doctor::class.java)

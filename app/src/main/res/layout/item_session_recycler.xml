@@ -121,6 +121,7 @@
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:text="@{obj.address}"
+                    android:lines="2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10dp"

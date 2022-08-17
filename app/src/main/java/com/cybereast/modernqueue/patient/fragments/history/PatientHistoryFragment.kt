@@ -107,6 +107,9 @@ class PatientHistoryFragment : Fragment() {
             .get()
             .addOnSuccessListener { snapshot ->
                 Log.d("TAG", "getMyBookings: " + snapshot.size())
+                if (mViewModel.bookingList.size > 0)
+                    mViewModel.bookingList.clear()
+
                 if (snapshot.size() > 0) {
                     for (snap in snapshot) {
                         val booking = snap.toObject(Booking::class.java)
